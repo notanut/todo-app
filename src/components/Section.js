@@ -69,7 +69,6 @@ const MainSection = ({toggleIcon, onClick}) => {
         key={name} 
         name={name} 
         setFilter={setFilter}
-        isPressed={name === filter}
         className={name === filter ? 'active' : ''}
         />
     ))
@@ -125,11 +124,11 @@ const MainSection = ({toggleIcon, onClick}) => {
                 
 
                 <div className="status__clear">
-                    <p
+                    <button
                     onClick={clearCompleted}
                     >
                         Clear Completed
-                    </p>
+                    </button>
                 </div>
 
             </div>

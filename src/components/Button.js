@@ -1,13 +1,12 @@
-const Button = ({name, setFilter, isPressed, className}) => {
+const Button = ({name, setFilter, className}) => {
     return (
         <>
-            <span
+            <button
             className={className}
-            aria-pressed={isPressed}
             onClick={() => setFilter(name)}
             >
                 {name}
-            </span>
+            </button>
         </>
     )
 }

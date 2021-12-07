@@ -23,7 +23,7 @@ function Input({addList}) {
 
         <div className="input">
             <div className="circle"></div>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input 
                 placeholder="Create a new todo..."
                 type="text" 

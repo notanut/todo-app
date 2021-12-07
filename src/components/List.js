@@ -1,6 +1,6 @@
 import deleteImg from "../assets/icon-cross.svg"
 
-function List({completed, onDelete, onChecked, id, task, checkedCircle, checkedTask, checkImg}) {
+function List({onDelete, onChecked, id, task, checkedCircle, checkedTask, checkImg}) {
 
     return (
         <>

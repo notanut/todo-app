@@ -1,5 +1,6 @@
 .header {
   &__bg__image {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -8,6 +9,7 @@
 
     img {
       object-fit: cover;
+      width: inherit;
       height: 300px;
     }
 

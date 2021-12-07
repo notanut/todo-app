@@ -96,6 +96,7 @@ h1 {
 }
 
 .header__bg__image {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -107,6 +108,7 @@ h1 {
 .header__bg__image img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: inherit;
   height: 300px;
 }
 
@@ -290,7 +292,7 @@ h1 {
   font-size: 0.875rem;
 }
 
-.status__count, .status__category, .status__clear {
+.status__count {
   color: #777a92;
 }
 
@@ -307,18 +309,18 @@ h1 {
   font-weight: 700;
 }
 
-.status__category span {
+.status__category button {
   cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  color: #777a92;
   -webkit-transition: 0.5s color ease;
   transition: 0.5s color ease;
 }
 
-.status__category span:hover {
+.status__category button:hover {
   color: #fafafa;
-}
-
-.status__category span[aria-pressed="true"] {
-  color: #3a7bfd;
 }
 
 .status__category .active {
@@ -329,12 +331,17 @@ h1 {
   cursor: pointer;
 }
 
-.status__clear p {
+.status__clear button {
+  cursor: pointer;
   -webkit-transition: 0.5s color ease;
   transition: 0.5s color ease;
+  background: none;
+  border: none;
+  outline: none;
+  color: #9394a5;
 }
 
-.status__clear p:hover {
+.status__clear button:hover {
   color: #fafafa;
 }
 
@@ -419,7 +426,7 @@ section {
   border-bottom: 1px solid #cacde8;
 }
 
-.light .status__count, .light .status__category, .light .status__clear {
+.light .status__count {
   color: #9394a5;
 }
 
@@ -427,15 +434,15 @@ section {
   background-color: #fafafa;
 }
 
-.light .status__category span:hover {
+.light .status__category button:hover {
   color: #161722;
 }
 
-.light .status__clear p {
+.light .status__clear button {
   color: #9394a5;
 }
 
-.light .status__clear p:hover {
+.light .status__clear button:hover {
   color: #161722;
 }
 

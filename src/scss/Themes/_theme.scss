@@ -42,15 +42,13 @@
   }
 
   .status {
-    &__count,
-    &__category,
-    &__clear {
+    &__count {
       color: $light-dark-grayish-blue;
     }
 
     &__category {
-        background-color: $light-gray;
-      span {
+      background-color: $light-gray;
+      button {
         &:hover {
           color: $very-dark-blue;
         }
@@ -58,9 +56,9 @@
     }
 
     &__clear {
-      p {
+      button {
         color: $light-dark-grayish-blue;
-  
+
         &:hover {
           color: $very-dark-blue;
         }
