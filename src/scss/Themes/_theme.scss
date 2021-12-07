@@ -39,6 +39,10 @@
 
   .list {
     border-bottom: 1px solid $light-grayish-blue;
+
+    .checkedList {
+      color: $light-dark-grayish-blue;
+    }
   }
 
   .status {

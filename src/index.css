@@ -426,6 +426,10 @@ section {
   border-bottom: 1px solid #cacde8;
 }
 
+.light .list .checkedList {
+  color: #9394a5;
+}
+
 .light .status__count {
   color: #9394a5;
 }
