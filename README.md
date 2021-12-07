@@ -61,7 +61,7 @@ Still, I wanna master my React JS skill. Wanna give Next a try though!
 
 ### Useful resources
 
-- [CRUD APP TUTORIAL](https://www.taniarascia.com/crud-app-in-react-with-hooks/) - I learned basic stuffs on how making a CRUD App.
+- [CRUD App Tutorial](https://www.taniarascia.com/crud-app-in-react-with-hooks/) - I learned basic stuffs on how making a CRUD App.
 - [MDN Conditional Rendering](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_filtering_conditional_rendering) - I was stuck in the middle about how can I do the conditional rendering. This article helped me a lot. Thank you MDN!
 
 ## Author
