@@ -1,0 +1,11 @@
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    img {
+        cursor: pointer;
+        transition: 0.5s opacity ease;
+    }
+}

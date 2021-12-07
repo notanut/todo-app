@@ -1,0 +1,62 @@
+@import "../Utilities/variables";
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.125rem 1.5rem;
+  font-size: 0.875rem;
+
+  &__count,
+  &__category,
+  &__clear {
+    color: $dark-dark-grayish-blue;
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    font-weight: $f-bold;
+
+    span {
+      cursor: pointer;
+      transition: 0.5s color ease;
+
+      &:hover {
+        color: $light-gray;
+      }
+      
+      &[aria-pressed="true"] {
+        color: $bright-blue;
+      }
+    }
+    .active {
+      color: $bright-blue;
+    }
+  }
+
+  &__clear {
+    cursor: pointer;
+
+    p {
+      transition: 0.5s color ease;
+      &:hover{
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .status__category {
+    display: flex;
+    font-size: 14px;
+    padding: 1rem;
+    justify-content: center;
+    background-color: $very-dark-desaturated-blue;
+    border-radius: 5px;
+  }
+}

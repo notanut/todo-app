@@ -1,0 +1,80 @@
+@import "../Utilities/variables";
+
+.lists {
+  background-color: $very-dark-desaturated-blue;
+  border-radius: 5px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.125rem 1.5rem;
+  border-bottom: 1px solid $dark-very-dark-grayish-blue-b;
+
+  &__wrapper {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    .circle {
+      cursor: pointer;
+      position: absolute;
+      border-radius: 50%;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      border: 2px solid $dark-very-dark-grayish-blue-b;
+      transition: 0.5s all ease;
+
+    &:hover {
+      border: double 1px transparent;
+      background-image: linear-gradient($very-dark-desaturated-blue, $very-dark-desaturated-blue), $check-bg;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+
+    img {
+      transform: translate(5px, 5px);
+    }
+  }
+
+  .checked {
+    background: $check-bg;
+
+    &:hover {
+      background: $check-bg;
+    }
+  }
+
+  p {
+    cursor: pointer;
+    color: $light-grayish-blue;
+    padding-left: 3rem;
+  }
+  }
+
+
+  &__delete {
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s opacity ease-in;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .checkedList {
+    color: $dark-very-dark-grayish-blue-a;
+    text-decoration: line-through;
+  }
+}
+
+@media (max-width: 550px) {
+  .list {
+    &__delete {
+      opacity: 1;
+    }
+  }
+}

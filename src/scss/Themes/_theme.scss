@@ -1,0 +1,70 @@
+@import "../Utilities/variables";
+
+.dark {
+  background-color: $very-dark-blue;
+}
+
+.light {
+  background-color: $very-light-grayish-blue;
+
+  .input,
+  .lists {
+    background-color: $light-gray;
+    color: $light-very-dark-grayish-blue;
+  }
+
+  input {
+    color: $light-very-dark-grayish-blue;
+  }
+
+  p {
+    color: $light-very-dark-grayish-blue;
+  }
+
+  .circle {
+    border-color: $very-light-grayish-blue;
+
+    &:hover {
+      background-image: linear-gradient($light-gray, $light-gray), $check-bg;
+    }
+  }
+
+  .checked {
+    background: $check-bg;
+
+    &:hover {
+      background: $check-bg;
+    }
+  }
+
+  .list {
+    border-bottom: 1px solid $light-grayish-blue;
+  }
+
+  .status {
+    &__count,
+    &__category,
+    &__clear {
+      color: $light-dark-grayish-blue;
+    }
+
+    &__category {
+        background-color: $light-gray;
+      span {
+        &:hover {
+          color: $very-dark-blue;
+        }
+      }
+    }
+
+    &__clear {
+      p {
+        color: $light-dark-grayish-blue;
+  
+        &:hover {
+          color: $very-dark-blue;
+        }
+      }
+    }
+  }
+}

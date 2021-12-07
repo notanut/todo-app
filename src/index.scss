@@ -1,0 +1,18 @@
+// IMPORT
+// UTILITIES
+@import "./scss/Utilities/variables";
+
+// BASE
+@import "./scss/Base/reset";
+@import "./scss/Base/typography";
+
+// LAYOUT
+@import "./scss/Layout/header";
+@import "./scss/Layout/section";
+
+// THEME
+@import "./scss/Themes/theme";
+
+body {
+    transition: 0.5s all ease-out;
+}
