@@ -1,28 +1,28 @@
 @import "../Utilities/variables";
 
 .input {
-    margin-top: 1rem;
-    background-color: $very-dark-desaturated-blue;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 5px;
-    padding: 1.125rem 1.5rem;
+  margin-top: 1rem;
+  background-color: $very-dark-desaturated-blue;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 5px;
+  padding: 1.125rem 1.5rem;
 
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border: 2px solid $dark-very-dark-grayish-blue-b;
+  }
 
-    .circle {
-        position: absolute;
-        border-radius: 50%;
-        width: 1.5625rem;
-        height: 1.5625rem;
-        border: 2px solid $dark-very-dark-grayish-blue-b;
-    }
-
-    input {
-        padding-left: 3rem;
-        background: transparent;
-        outline: none;
-        border: none;
-        color: $light-grayish-blue;
-    }
+  input {
+    padding-left: 3rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: $light-grayish-blue;
+    caret-color: $bright-blue;
+  }
 }
