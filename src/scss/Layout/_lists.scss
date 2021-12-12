@@ -19,7 +19,10 @@
     align-items: center;
 
     .circle {
+      display: flex;
       cursor: pointer;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       border-radius: 50%;
       width: 1.5625rem;
@@ -34,9 +37,6 @@
       background-clip: content-box, border-box;
     }
 
-    img {
-      transform: translate(5px, 5px);
-    }
   }
 
   .checked {
@@ -54,7 +54,11 @@
   }
   }
 
-
+  button {
+    outline: none;
+    border: none;
+    background: transparent;
+  }
   &__delete {
     cursor: pointer;
     opacity: 0;

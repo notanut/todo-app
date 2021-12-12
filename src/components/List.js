@@ -20,11 +20,13 @@ function List({onDelete, onChecked, id, task, checkedCircle, checkedTask, checkI
                             >{task}
                             </p>
                     </div>
+                    <button>
                         <img 
                         onClick={() => onDelete(id)}
                         className="list__delete" 
                         src={deleteImg} 
                         alt="close" />
+                    </button>
                     </div>
 
         </>

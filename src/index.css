@@ -214,7 +214,16 @@ h1 {
 }
 
 .list__wrapper .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   border-radius: 50%;
   width: 1.5625rem;
@@ -232,11 +241,6 @@ h1 {
   background-clip: content-box, border-box;
 }
 
-.list__wrapper .circle img {
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
-}
-
 .list__wrapper .checked {
   background: -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3));
   background: linear-gradient(to right, #57ddff, #c058f3);
@@ -251,6 +255,12 @@ h1 {
   cursor: pointer;
   color: #cacde8;
   padding-left: 3rem;
+}
+
+.list button {
+  outline: none;
+  border: none;
+  background: transparent;
 }
 
 .list__delete {
